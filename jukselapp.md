@@ -17,7 +17,7 @@ Legge til en fil i listen over ting å synkronisere. Bruk asterisk (*) for å le
 * Git add:
 ```git add filnavn```
 
-* Git add (alle filer i en mappe):
+* Git add (alle filer i en mappe kalt source):
 ```git add source/*```
 
 Lag en oversikt over alle filene og endringene som skal lastes opp (med en melding)
