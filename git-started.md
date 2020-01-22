@@ -5,8 +5,8 @@
 Inne i Git Bash kjør:
 ```ssh-keygen -t rsa -b 4096```
 
-* Den vil nå spørre hvor du vil lagre filen, bare trykk enter ettersom det er håpløst å legge filen ett annet sted med Git Bash.  
-* Neste er ett passord som du gjentar to ganger.  
+Den vil nå spørre hvor du vil lagre filen, bare trykk enter ettersom det er håpløst å legge filen ett annet sted med Git Bash.  
+Neste er ett passord som du gjentar to ganger.  
 
 Du har nå en SSH nøkkel "id_rsa" og et public certificate "id_rsa.pub".
 
@@ -15,7 +15,7 @@ Velg ett deskriptivt navn (uten mellomrom siden kommandolinjen ikke er glad i di
 
 ---
 
-Åpne https://tools.uia.no/bitbucket/plugins/servlet/ssh/account/keys i nettleseren din, og velg "Add key"
+Åpne <https://tools.uia.no/bitbucket/plugins/servlet/ssh/account/keys> i nettleseren din, og velg "Add key"
 
 Tilbake i kommandolinjen kan du kopiere og lime inn denne kommandoen  
 ```clip < ~/.ssh/uia_bitbucket.pub```  
@@ -26,7 +26,8 @@ Tilbake i kommandolinjen kan du kopiere og lime inn denne kommandoen
 Åpne en terminal tekst editor med  
 ```nano ~/.ssh/config```  
 og lim inn:
-```
+
+```config
 Host tools.uia.no
         HostName tools.uia.no
         Port 7999
@@ -35,8 +36,9 @@ Host tools.uia.no
         IdentityFile ~/.ssh/uia_bitbucket
 ```
 
-Husk å bytt ut `uia_bitbucket` med navnet du ga på nøkkelfilen din. Dette er IKKE den som ender med .pub.
-* Lagre med CTRL+S og lukk med CTRL+X
+> Husk å bytt ut `uia_bitbucket` med navnet du ga på nøkkelfilen din. Dette er IKKE den som ender med .pub.
+
+Lagre med CTRL+S og lukk med CTRL+X
 
 ---
 
@@ -58,8 +60,8 @@ Du kan skjekke dette om du åpner Filutforskeren og Trykker på brukernavnet dit
 
 Gå tilbake i terminalen og skriv `cd ~/Go/src/tools.uia.no`
 
-Nå kan vi begynne med Git 
-```ssh://git@tools.uia.no:7999/is105k20v/brukernavn.git```, hvor du bytter ut brukernavn med ditt eget.
+Nå kan vi begynne med Git  
+```git clone git@tools.uia.no:7999/is105k20v/brukernavn.git```, hvor du bytter ut brukernavn med ditt eget.
 
 ---
 
