@@ -21,6 +21,31 @@ Tilbake i kommandolinjen kan du kopiere og lime inn denne kommandoen
 ```clip < ~/.ssh/uia_bitbucket.pub```  
 (bytt ut uia_bitbucket.pub med hva enn du navnga den som i forrige steg) og lime inn den lange listen over tall, tegn og bokstaver vilkårlig plassert  tilbake i nettleseren og lagre dette.
 
+
+### Lagre passordet så det ikke må skrives inn hele tiden
+
+Normalt så vil du bli spurt om passordet du lagde for nøkkelen hele tiden. 
+Hvis du der lagde et litt for langt passord eller rett og slett er litt lat, så kan du få maskinen din til å lagre passordet for deg ved å skrive følgende i kommandolinjen:
+
+```ssh-add```
+
+Hvis du lagde nøkkelen din med et annet navn kan du legge inn banen dit etter kommandoen slik:
+
+```ssh-add ~/.ssh/uia_bitbucket```
+
+
+> Hvis denne kommandoen gir feilmeldingen:
+> 
+> `Could not open a connection to your authentication agent.`
+>
+> Så kan du prøve dette først:
+> ```eval `ssh-agent -s` ```
+> Og deretter prøve `ssh-add` på nytt.
+
+
+Nå kan du koble til nettsiden / git-serveren uten å måtte oppgi passordet!
+
+
 ## Konfigurere SSH til å assossiere nøkkelfil med nettsiden
 
 Åpne en terminal tekst editor med  
