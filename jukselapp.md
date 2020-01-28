@@ -1,5 +1,13 @@
 # Jukselapp med Git kommandoer og eksempler
 
+List opp alle Git kommandoer
+
+```git --help```
+
+Finn ut mer om kommandoene printet ut fra `git --help`. Om du vil lære mer om `git commit`, kan du kjøre:
+
+```git commit --help```
+
 ## Lokale Git Kommandoer
 
 ### Kloning
