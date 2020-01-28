@@ -41,3 +41,15 @@ Laste opp endringer til Git server
 * Git push origin _gren-navn_ (dytter alle filene spesifisert tidligere i grenen _gren-navn_ på origin serveren)  
 
 ```git push origin testing```
+
+###  Hente Endringer
+
+Koble til server og se etter endringer
+
+* Git pull
+
+```git pull```
+
+* Git pull origin _grein_ (henter alle filene som er på grenen _grein_ fra origin serveren)
+
+```git pull origin grein```
