@@ -12,7 +12,7 @@ _Må jobbes mer med, men er en start så langt_
 ## SSH
 
 SSH virker kanskje som noe mystisk teknologi noen fant fra forrige årtusen og aldri sluttet å bruke, men når du skal jobbe med Linux eller Unix servere, er det helt fantastisk.  
-Fordelen er at du ikke bruker enormt med båndvidde og systemresursser på å kjøre et grafisk grensesnitt på en server som ikke skal brukes med skjerm (såkalt headless-server).  
+Fordelen er at du ikke bruker enormt med båndvidde og systemresursser på å kjøre et grafisk grensesnitt på en server som ikke skal brukes med skjerm (såkalt headless-server).
 
 ## Linux-basics
 
@@ -32,6 +32,9 @@ Nyttig kunnskap når du skal jobbe med Linux eller UNIX baserte servere
 	* `ls -l` - lister opp filene i en mappe som en liste med fil rettigheter
 	* `ls -la` - samme som over, men lister også de skjulte
 * `mkdir folder` - lag mappen `folder`
+* `pwd` - Print Working Directory. Viser hvor du befinner deg i filsystemet.
+* `whoami` - viser hvilken bruker du kjører kommandoer som for øyeblikket
+* `
 
 ### Debian / Ubuntu spesifikke kommandoer
 
@@ -39,6 +42,8 @@ Nyttig kunnskap når du skal jobbe med Linux eller UNIX baserte servere
 	* `sudo apt update` - Apt er et program som må kjøre som administrator, siden den installerer pakker i beskyttede foldere. Update biten henter informasjon fra en sentral server om hvilke pakker som har vært endret siden sist du kjørte en oppdatering.
 	* `sudo apt install pakkenavn` - Søker etter `pakkenavn` og prøver å installere dette.
 	* `sudo apt upgrade` - Oppgraderer alle pakkene som har oppdateringer tilgjengelig. Husk å kjøre `sudo apt update` først.
+	* `sudo apt remove pakkenavn` - Fjerner pakken `pakkenavn`. Fjerner ikke pakkene som ble installert sammen med `pakkenavn`
+	* `sudo apt auto-remove` - Fjerner pakker som ikke er i bruk på systemet (som rester etter fjernede pakker).
 
 ### Hva du ikke bør gjøre
 
@@ -81,4 +86,7 @@ Nano er en simpel tekst editor. Det du trenger å vite er:
 
 ## Server
 
-
+Anbefalt programvare å installere
+| Navn | Installasjons kommando | Funksjon |
+|------|------------------------|----------|
+| `fail2ban` | `sudo apt install fail2ban` | Sjekker etter gjentatte innloggingsforsøk, og gir disse en timeout etter et visst antall forsøk. |
