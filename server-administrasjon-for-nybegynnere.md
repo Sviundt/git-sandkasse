@@ -87,6 +87,7 @@ Nano er en simpel tekst editor. Det du trenger å vite er:
 ## Server
 
 Anbefalt programvare å installere
+
 | Navn | Installasjons kommando | Funksjon |
 |------|------------------------|----------|
 | `fail2ban` | `sudo apt install fail2ban` | Sjekker etter gjentatte innloggingsforsøk, og gir disse en timeout etter et visst antall forsøk. |
