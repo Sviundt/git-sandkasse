@@ -7,6 +7,9 @@ En personlig sandkasse for å bli kjent med Git.
 |---------------|---------|
 | [Git Started](git-started.md) | Hvordan sette opp Git på en Windows maskin (WIP) |
 | [Jukselapp](jukselapp.md) | Oversikt over vanlige Git kommandoer med norske forklaringer på hva de gjør (WIP) |
+| [Linux Server Administrasjon for Nybegynnere](server-administrasjon-for-nybegynnere.md) | Kjapt om å starte med å administrere linux servere for nybegynnere (WIP) |
+
+Om du finner feil, vær snill å rapporter dette eller lag en branch med riktig informasjon så jeg kan rette opp i dette.
 
 Lisensiert etter [GNU General Public License v3.0](LICENSE).  
 
