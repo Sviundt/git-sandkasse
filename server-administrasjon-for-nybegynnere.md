@@ -14,9 +14,11 @@ _Må jobbes mer med, men er en start så langt_
 SSH virker kanskje som noe mystisk teknologi noen fant fra forrige årtusen og aldri sluttet å bruke, men når du skal jobbe med Linux eller Unix servere, er det helt fantastisk.  
 Fordelen er at du ikke bruker enormt med båndvidde og systemresursser på å kjøre et grafisk grensesnitt på en server som ikke skal brukes med skjerm (såkalt headless-server).
 
+
+
 ## Linux-basics
 
-Nyttig kunnskap når du skal jobbe med Linux eller UNIX baserte servere
+Nyttige kunnskaper å ha når du skal jobbe med Linux eller UNIX baserte servere
 
 * `root` - Superbrukeren over alle superbrukere på maskinen. Tenk deg om før du kjører noe som root.
 * `sudo` - Kjører en kommando som superbruker uten å være logget inn som superbruker. Tenk kjør som admin på Windows, men på steroider.
@@ -34,7 +36,12 @@ Nyttig kunnskap når du skal jobbe med Linux eller UNIX baserte servere
 * `mkdir folder` - lag mappen `folder`
 * `pwd` - Print Working Directory. Viser hvor du befinner deg i filsystemet.
 * `whoami` - viser hvilken bruker du kjører kommandoer som for øyeblikket
-* `
+* `cat` - printer en fil som output i terminalen. Brukbart om du vil vise innhold (f.eks ssh pub-key) i terminalen uten å med et uhell redigere den.
+* `rm fil` - Remove `fil` fra en mappe. Samme som å slette noe permanent fra en Windows maskin. Vær forsiktig med rm.
+* `rm -rf ~/go/søppel` - Rekursivt sletter mappen `~/go/søppel` fra maskinen. Kort og presist, sletter alt i mappen "permanent" (kan teoretisk sett reverseres, men ikke gamble på sånt).
+* `clear` - Rengjør vinduet (vasker desverre ikke skjermen i samme slengen), men gjør at du starter med bare standarden `brukernavn@hostnavn:mappen/du/var/inni`
+* `[Ctrl]`+'c` - Stopper en kjørende kommando.
+* `man kommando` - Åpner manualen til `kommando` med oversikt og forklaringer på alle funksjoner den kan gjøre. Ofte referert til av irriterte systemadministratorer (eller forelesere) i konteksten "read the f***ing manual" eller rtfm.
 
 ### Debian / Ubuntu spesifikke kommandoer
 
@@ -91,3 +98,15 @@ Anbefalt programvare å installere
 | Navn | Installasjons kommando | Funksjon |
 |------|------------------------|----------|
 | `fail2ban` | `sudo apt install fail2ban` | Sjekker etter gjentatte innloggingsforsøk, og gir disse en timeout etter et visst antall forsøk. |
+
+## Hjelp
+
+Om du står fast med noe linux eller unix stuff, kan det være vanskelig å se hvor du skal starte å lete etter løsninger. Ofte kan du kjøre kommandoer med ` --help` (mellomrommet er viktig), for å få opp en liste over hva som kan gjøres med kommandoen.  
+
+Nett resursser:
+
+* [AskUbuntu](https://askubuntu.com/) - Sted folk stiller spørsmål om det meste som omhandler Ubuntu
+* [Arch Wiki](https://wiki.archlinux.org/index.php/) - Egentlig Wiki for [Arch Linux](https://www.archlinux.org/), men har informasjon om de fleste pakker som omhandler linux generelt.
+* [Gentoo Wiki](https://wiki.gentoo.org/wiki/Main_Page) - Gentoo Wiki for Gentoo Linux. Informasjonen her kan være relativt teknisk avansert, men relativt utdypende. Ikke helt anbefalt som første sted å sjekke om du har trøbbel.
+* [Linux.Die.Net Man Pages](https://linux.die.net/man/) - Som kommandoen `man` bare som en nettside, har info om de fleste pakker som er tilgjengelige.
+* [Ubuntu Wiki](https://wiki.ubuntu.com/) - Wiki for Ubuntu operativsystemet.
